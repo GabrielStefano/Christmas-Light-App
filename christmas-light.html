@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Light App</title>
+    <link rel="stylesheet" href="christmas-light.css"> 
+</head>
+<body>
+    <div class="section">
+        <!-- <input type="button" value="-"> -->
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle blue"></div>
+        <div class="circle green"></div>
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle blue"></div>
+        <div class="circle green"></div>
+       
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <!-- <input type="button" value="+"> -->
+    </div>
+    <div class='control'>
+        <input type="button" value="On" id ='buttonlayout' onclick="TurnOn()">
+        <input type="button" value="Off" id ='buttonlayout' onclick="TurnOff()">
+        <div class = 'control2'>
+            Speed: <input type="text" name="speed" id="speed" placeholder="1~5">
+            <input type="button" value="Run" id='runbutton' onclick="ChangeSpeed()">
+        </div>
+    </div>
+<!--     
+    <div class='footer'>
+        <p>Gabriel Stefano</p>
+    </div> -->
+    <script src="christmas-light.js"></script>
+</body>
+</html>
