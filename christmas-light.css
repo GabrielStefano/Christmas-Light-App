@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background: rgb(25, 21, 26);
+    color: white;
+    
+}
+.section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5%;
+}
+.circle {
+    display: flex;
+    margin: 1rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: 1s all ease;    
+  }
+
+/* .title {
+    font-family: 'Cinzel', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-align : center;
+    text-shadow: 0 0 30px white;
+} */
+
+.circle:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 17.5px;
+    top: -15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgb(68, 53, 73);
+    border-radius: 2px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(97, 81, 107);
+}
+
+.circle:after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 30px;
+    position: absolute;
+    width: 70px;
+    height: 18.6666666667px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+}
+
+.circle:last-of-type::after {
+    content: '';
+    position: absolute;
+    border: none;
+}
+
+.red {
+    background-color: #c0392b;
+    animation: glow-1 1s infinite;
+}
+
+.yellow {
+    background-color: #f1c40f;
+    animation: glow-2 1s infinite;
+}
+
+.blue {
+    background-color: #64fcfe;
+    animation: glow-3 1s infinite;
+}
+
+.green {
+    background-color: #2ecc71;
+    animation: glow-4 1s infinite;
+}
+
+
+
+@keyframes glow-1 {
+    0%,
+    25% {
+        box-shadow: 0 0 20px 5px #c0392b;
+    }
+    50% {
+        box-shadow: none;
+    }
+}
+
+@keyframes glow-2 {
+    0%,
+    25% {
+        box-shadow: 0 0 20px 5px #f1c40f;
+    }
+    50% {
+        box-shadow: none;
+    }
+
+}
+
+@keyframes glow-3 {
+    0%,
+    25% {
+        box-shadow: 0 0 20px 5px #74f7e1;
+    }
+    50% {
+        box-shadow: none;
+    }
+}
+
+@keyframes glow-4 {
+    0%,
+    25% {
+        box-shadow: 0 0 20px 5px #2ecc71;
+    }
+    50% {
+        box-shadow: none;
+    }
+
+}
+
+
+/* @-webkit-keyframes main-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #c0392b, 0 0 60px #c0392b, 0 0 70px #c0392b;
+    }
+    25% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #f1c40f, 0 0 40px #ff4da6, 0 0 50px #f1c40f, 0 0 60px #f1c40f, 0 0 70px #f1c40f, 0 0 80px #ff4da6;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #74f7e1, 0 0 40px #74f7e1, 0 0 50px #74f7e1, 0 0 60px #74f7e1, 0 0 70px #74f7e1, 0 0 80px #74f7e1;
+    }
+    75% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71, 0 0 60px #2ecc71, 0 0 70px #2ecc71, 0 0 80px #2ecc71;
+    }
+} */
+
+.control{
+    display: flex;
+    /* background: tomato; */
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* margin: auto !important; */
+    position: relative;
+    
+    top: 200px;
+    /* left: 150px;
+    top: 200px; */
+    
+}
+
+#buttonlayout{
+    font-family: 'Lato',sans-serif;
+    font-size: 18pt;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+#buttonlayout:hover:first-of-type{
+    background:#2ecc71;
+    animation: glow-4 2s;
+}
+
+#buttonlayout:focus:first-of-type{
+    background:#2ecc71;
+}
+
+#buttonlayout:hover:last-of-type{
+    background:#c0392b;
+    animation: glow-1 2s;
+}
+
+
+#buttonlayout:focus:last-of-type{
+    background:#c0392b;
+}
+
+.control2{
+    /* display: flex; */
+    justify-content: center;
+    position: relative;
+    left: 80px;
+    font-size: 18pt;
+    font-family: 'Lato',sans-serif;
+    /* top: 35px; */
+}
+
+.control2 > input{
+    height: 40px;
+    width: 60px;
+    padding-left: 5px;
+    /* border-radius: 30%; */
+    font-size: 18pt;
+    font-family: 'Lato',sans-serif;
+}
+
+
+#runbutton{
+    font-family: 'Lato',sans-serif;
+    font-size: 18pt;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #64fcfe;
+}
+#runbutton:focus{
+    animation: glow-3 1s infinite;
+}
+
+
+
+.footer{
+    /* display: flex; */
+    text-align: end;
+    /* align-items: end; */
+    background: red;
+    /* margin: auto; */
+    color: white;
+    font-family: 'Lato',sans-serif;
+    font-size: 12pt;
+    font-style: italic;
+    padding-top: 150px;
+}
+  
